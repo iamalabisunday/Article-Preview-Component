@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- displays site properly based on user's device -->
+
+    <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png" />
+
+    <!-- Google font link -->
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Manrope:wght@200..800&display=swap"
+    />
+
+    <!-- Style link -->
+    <link rel="stylesheet" href="./style.css" />
+
+    <title>Frontend Mentor | Article preview component</title>
+  </head>
+  <body>
+    <main class="article-component">
+      <!-- Articl Photo Section -->
+      <section class="article-img-container"></section>
+      <!-- Message Section -->
+      <section class="message-section">
+        <h2 class="title">
+          Shift the overall look and feel by adding these wonderful touches to furniture in your
+          home
+        </h2>
+        <p class="paragraph">
+          Ever been in a room and felt like something was missing? Perhaps it felt slightly bare and
+          uninviting. I’ve got some simple tips to help you make any room feel complete.
+        </p>
+
+        <!-- Profile and Share Section -->
+        <article class="profile-share mobileHidden">
+          <!-- profile Details -->
+          <div class="profile-info">
+            <!-- Profile photo -->
+            <img src="./images/avatar-michelle.jpg" alt="profile photo" class="profile-img" />
+            <!-- name and Date section -->
+            <div class="name-date">
+              <p class="name">Michelle Appleton</p>
+              <p class="date">28 Jun 2020</p>
+            </div>
+          </div>
+          <!-- social media share section -->
+          <div class="overlay-share-container">
+            <div class="overlay-position hidden">
+              <div class="overlay-share">
+                <p class="share-text">Share</p>
+                <img src="./images/icon-facebook.svg" alt="facebook share icon" />
+                <img src="./images/icon-twitter.svg" alt="twitter share icon" />
+                <img src="./images/icon-pinterest.svg" alt="pinterest share icon" />
+              </div>
+              <div class="triangle"></div>
+            </div>
+
+            <!-- /////////////////////////////////////////// -->
+            <!-- //////// profile button Section //////////////// -->
+            <!-- Share icon button -->
+            <div class="share">
+              <img
+                src="./images/icon-share.svg"
+                alt=" click to see more option to share the article to differet social media platfrom"
+              />
+            </div>
+          </div>
+        </article>
+      </section>
+
+      <!-- Share section for the mobile view only -->
+      <section class="overlay-share-mobile-view overlayHidden">
+        <p class="share-text">Share</p>
+        <img src="./images/icon-facebook.svg" alt="facebook share icon" />
+        <img src="./images/icon-twitter.svg" alt="twitter share icon" />
+        <img src="./images/icon-pinterest.svg" alt="pinterest share icon" />
+      </section>
+
+      <!-- // Mobile Share button // -->
+      <section class="mobile-share-btn">
+        <img
+          src="./images/icon-share.svg"
+          alt=" click to see more option to share the article to differet social media platfrom"
+        />
+      </section>
+    </main>
+    <script src="./script.js"></script>
+  </body>
+</html>
